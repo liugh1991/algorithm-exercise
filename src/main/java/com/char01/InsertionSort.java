@@ -2,6 +2,9 @@ package main.java.com.char01;
 
 public class InsertionSort {
     public static  void insertionSort(int[] arr){
+        if (arr == null || arr.length < 2) {
+            return;
+        }
         for (int i = 1; i < arr.length; i++) {
             for (int j = i - 1 ; j >= 0; j--) {
                 if(arr[j] > arr[j + 1]){
